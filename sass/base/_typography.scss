@@ -1,0 +1,19 @@
+body {
+  font-family: $font-primary;
+  color: $color-purple-500;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-purple-500;
+  font-weight: 700;
+}

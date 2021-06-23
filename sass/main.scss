@@ -1,2 +1,14 @@
-@import "base";
-@import "typography";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+
+@import "components/footer";
+@import "components/navigation";
+
+@import "sections/about";
+@import "sections/cta";
+@import "sections/hero";
+@import "sections/projects";
+@import "sections/tech-stack";

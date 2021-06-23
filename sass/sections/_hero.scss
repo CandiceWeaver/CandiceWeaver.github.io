@@ -1,0 +1,15 @@
+.hero {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  background: rgba($color-purple-200, 0.35);
+  box-shadow: 0 8px 32px 0 rgba($color-purple-500, 0.37);
+  backdrop-filter: blur(0.1rem);
+  -webkit-backdrop-filter: blur(0.1rem);
+  border-radius: 0 0 1rem 0;
+  border: 1px solid rgba($color-purple-200, 0.18);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
