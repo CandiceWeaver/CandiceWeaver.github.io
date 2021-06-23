@@ -1,0 +1,28 @@
+// Colours
+$color-purple-100: #e9dbf0;
+$color-purple-200: #be92d3;
+$color-purple-300: #924ab5;
+$color-purple-400: #582c6d;
+$color-purple-500: #1d0f24;
+
+// Fonts
+$font-primary: "Lato", sans-serif;
+
+// Base Styles
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+body {
+  font-family: $font-primary;
+  color: ;
+}
