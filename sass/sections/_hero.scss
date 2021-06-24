@@ -12,7 +12,7 @@
   border-radius: 0 0 1rem 0;
   border: 1px solid rgba($color-purple-200, 0.18);
   display: grid;
-  grid-template-rows: max-content 70% 8rem;
+  grid-template-rows: max-content 50% 1fr;
   grid-template-columns: 10rem 1fr 10rem;
 
   &__navigation {
@@ -24,11 +24,16 @@
   &__content {
     grid-row: 2/3;
     grid-column: 2/3;
-    align-self: center;
+    align-self: flex-end;
+
+    &--heading {
+      margin-bottom: 1rem;
+    }
   }
 
   &__buttons {
     grid-row: 3/4;
     grid-column: 2/3;
+    align-self: center;
   }
 }
