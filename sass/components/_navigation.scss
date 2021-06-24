@@ -3,9 +3,6 @@
   display: flex;
   justify-content: space-between;
 
-  &__brand {
-  }
-
   &__links {
     display: flex;
     justify-content: space-between;
@@ -13,6 +10,12 @@
 
     &--link {
       align-self: center;
+      padding-bottom: 0.5rem;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $color-purple-400;
+      }
     }
   }
 }
