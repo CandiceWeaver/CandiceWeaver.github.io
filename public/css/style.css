@@ -135,7 +135,7 @@ a {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      display: hidden;
+      opacity: 0;
       transition: all 0.3s; }
       .projects__project--info:hover {
         background-color: #be92d3;
