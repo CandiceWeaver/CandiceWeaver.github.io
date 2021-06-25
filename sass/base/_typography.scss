@@ -8,7 +8,7 @@ body {
 h1 {
   font-weight: 700;
   text-transform: capitalize;
-  font-size: 7rem;
+  font-size: 6.25rem;
   color: $color-purple-400;
 }
 
@@ -21,11 +21,9 @@ h2 {
 h4 {
   font-weight: 700;
   font-size: 1.6rem;
-  text-transform: uppercase;
 }
 
 a {
-  text-transform: uppercase;
   text-decoration: none;
   color: $color-purple-500;
   font-weight: 700;

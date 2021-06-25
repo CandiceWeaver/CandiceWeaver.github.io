@@ -3,25 +3,31 @@
   width: 5rem;
   box-shadow: $box-shadow-small;
   transition: all 0.3s;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
 
   &:hover {
-    border-color: $color-purple-400;
-    background-color: $color-purple-400;
+    border-color: $color-purple-300;
+    background-color: $color-purple-300;
     color: $color-purple-100;
   }
 
   &__outline {
     margin-right: 2rem;
-    padding: 1rem 1.5rem;
     background-color: $color-purple-200;
     color: $color-purple-500;
-    border: 0.2rem solid $color-purple-500;
+    border: 0.2rem solid $color-purple-200;
   }
 
   &__full {
-    padding: 1rem 2rem;
     background-color: $color-purple-500;
     color: $color-purple-100;
     border: 0.2rem solid $color-purple-500;
+  }
+
+  &__small {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    text-transform: inherit;
   }
 }
