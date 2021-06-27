@@ -2,7 +2,7 @@
   grid-row: 2/3;
   grid-column: 2/3;
   display: grid;
-  grid-template-rows: repeat(3, 50rem);
+  grid-template-rows: 60rem repeat(2, 55rem) max-content;
   grid-template-columns: 23rem repeat(2, 1fr) 23rem;
   grid-gap: 5rem;
 
@@ -53,7 +53,7 @@
       }
 
       &-2 {
-        height: 60%;
+        height: 55%;
       }
 
       &-3 {
@@ -73,7 +73,7 @@
       }
 
       &-2 {
-        height: 40%;
+        height: 45%;
       }
 
       &-3 {
@@ -95,5 +95,12 @@
     &--link {
       width: max-content;
     }
+  }
+
+  &__btn {
+    grid-row: 4/5;
+    grid-column: 2/4;
+    justify-self: center;
+    width: max-content;
   }
 }
