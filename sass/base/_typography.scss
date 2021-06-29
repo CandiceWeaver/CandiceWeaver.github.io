@@ -1,15 +1,23 @@
 body {
   font-family: $font-primary;
-  color: $color-purple-500;
+  color: $color-purple-100;
   font-weight: 400;
   font-size: 1.1rem;
+
+  @media (prefers-color-scheme: light) {
+    color: $color-purple-500;
+  }
 }
 
 h1 {
   font-weight: 700;
   text-transform: capitalize;
   font-size: 6.25rem;
-  color: $color-purple-400;
+  color: $color-purple-200;
+
+  @media (prefers-color-scheme: light) {
+    color: $color-purple-400;
+  }
 }
 
 h2 {
@@ -31,7 +39,11 @@ h4 {
 
 a {
   text-decoration: none;
-  color: $color-purple-500;
+  color: $color-purple-100;
   font-weight: 700;
   font-size: 1rem;
+
+  @media (prefers-color-scheme: light) {
+    color: $color-purple-500;
+  }
 }

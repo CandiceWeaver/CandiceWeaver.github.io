@@ -15,7 +15,11 @@
       transition: all 0.3s;
 
       &:hover {
-        color: $color-purple-400;
+        color: $color-purple-200;
+
+        @media (prefers-color-scheme: light) {
+          color: $color-purple-400;
+        }
       }
     }
   }

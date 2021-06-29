@@ -1,7 +1,7 @@
 .footer {
   grid-row: 5/6;
   grid-column: 1/-1;
-  background-color: $color-purple-200;
+  background-color: $color-purple-400;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -15,7 +15,11 @@
       transition: all 0.3s;
 
       &:hover {
-        color: $color-purple-400;
+        color: $color-purple-200;
+
+        @media (prefers-color-scheme: light) {
+          color: $color-purple-400;
+        }
       }
     }
 
@@ -29,7 +33,11 @@
         transition: all 0.3s;
 
         &:hover {
-          color: $color-purple-400;
+          color: $color-purple-200;
+
+          @media (prefers-color-scheme: light) {
+            color: $color-purple-400;
+          }
         }
       }
     }
@@ -38,5 +46,9 @@
   &__copyright {
     align-self: center;
     font-size: 1rem;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: $color-purple-200;
   }
 }
