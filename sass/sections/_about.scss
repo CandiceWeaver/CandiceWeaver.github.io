@@ -2,12 +2,12 @@
   grid-row: 3/4;
   grid-column: 1/-1;
   background-color: $color-purple-200;
-  box-shadow: $box-shadow-large;
   display: grid;
   grid-template-rows: max-content 7rem 3rem min-content 18vh;
   grid-template-columns: 1fr repeat(2, 33%) 1fr;
   grid-gap: 3rem;
   padding-top: 10vh;
+  box-shadow: $box-shadow-large;
 
   &__heading {
     grid-row: 1/2;
@@ -53,6 +53,7 @@
     justify-content: space-around;
     background-color: $color-purple-100;
     height: 100%;
+    box-shadow: $box-shadow-large;
 
     &--tech {
       display: flex;
