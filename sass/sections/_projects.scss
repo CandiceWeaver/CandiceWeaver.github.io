@@ -3,7 +3,7 @@
   grid-column: 2/3;
   display: grid;
   grid-template-rows: 60rem repeat(2, 55rem) max-content;
-  grid-template-columns: 23rem repeat(2, 1fr) 23rem;
+  grid-template-columns: 29% repeat(2, 1fr) 29%;
   grid-gap: 5rem;
 
   &__project {
