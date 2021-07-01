@@ -11,7 +11,6 @@
 
     &--link {
       align-self: center;
-      padding-bottom: 0.5rem;
       transition: all 0.3s;
 
       &:hover {
@@ -22,5 +21,41 @@
         }
       }
     }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+
+  &__mobile {
+    align-self: center;
+    display: none;
+
+    &--open {
+    }
+
+    &--close {
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      justify-self: flex-end;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+
+  @media only screen and (min-width: 801px) {
+    display: flex;
+  }
+}
+
+.active {
+  background-color: $color-purple-400;
+
+  @media (prefers-color-scheme: light) {
+    background-color: $color-purple-200;
   }
 }

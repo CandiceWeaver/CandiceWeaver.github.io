@@ -5,24 +5,59 @@
   display: grid;
   grid-template-rows: max-content 7rem 3rem min-content 18vh;
   grid-template-columns: 1fr repeat(2, 33%) 1fr;
-  grid-gap: 3rem;
+  grid-row-gap: 3rem;
   padding-top: 10vh;
   box-shadow: $box-shadow-large;
 
   &__heading {
     grid-row: 1/2;
     grid-column: 3/4;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 2/3;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-row: 2/3;
+      grid-column: 1/-1;
+    }
   }
 
   &__text {
     &--1 {
       grid-row: 2/3;
       grid-column: 3/4;
+
+      @media only screen and (max-width: $bp-large) {
+        grid-column: 2/3;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        grid-row: 3/4;
+        grid-column: 1/-1;
+      }
     }
 
     &--2 {
       grid-row: 3/4;
       grid-column: 3/4;
+
+      @media only screen and (max-width: $bp-large) {
+        grid-column: 2/3;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        grid-row: 4/5;
+        grid-column: 1/-1;
+      }
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      padding-right: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 0 1rem;
     }
   }
 
@@ -31,6 +66,16 @@
     grid-column: 3/4;
     width: max-content;
     align-self: flex-end;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 2/3;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-row: 5/6;
+      grid-column: 1/-1;
+      justify-self: center;
+    }
   }
 
   &__img {
@@ -45,6 +90,21 @@
 
     @media (prefers-color-scheme: light) {
       border: 1rem solid $color-purple-200;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 1/2;
+      justify-self: center;
+      align-self: center;
+      width: 23rem;
+      height: 23rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 20rem;
+      height: 20rem;
+      grid-row: 1/2;
+      grid-column: 1/-1;
     }
   }
 
@@ -78,9 +138,30 @@
     @media (prefers-color-scheme: light) {
       background-color: $color-purple-100;
     }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-row: 6/7;
+    }
   }
 
   @media (prefers-color-scheme: light) {
     background-color: $color-purple-200;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows: max-content 7rem 3rem min-content 18vh;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 20rem max-content 5rem 2rem min-content 18vh;
+    grid-template-columns: 100%;
+    text-align: center;
+    padding-top: 5vh;
+    grid-row-gap: 1.5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-column: 1/-1;
   }
 }

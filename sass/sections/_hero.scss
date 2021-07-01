@@ -18,7 +18,7 @@
 
   &__navigation {
     grid-row: 1/2;
-    grid-column: 1/4;
+    grid-column: 1/-1;
     padding: 3rem 3rem 0 3rem;
   }
 
@@ -30,12 +30,31 @@
     &--heading {
       margin-bottom: 1rem;
     }
+
+    @media only screen and (max-width: $bp-larger) {
+      justify-self: center;
+      grid-column: 1/-1;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      align-self: center;
+    }
   }
 
   &__buttons {
     grid-row: 3/4;
     grid-column: 2/3;
     align-self: center;
+
+    @media only screen and (max-width: $bp-larger) {
+      justify-self: center;
+      grid-column: 1/-1;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      align-self: flex-start;
+    }
   }
 
   @media (prefers-color-scheme: light) {
@@ -46,5 +65,17 @@
     );
     border-right: 1px solid rgba($color-purple-200, 0.18);
     border-bottom: 1px solid rgba($color-purple-200, 0.18);
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-column: 1/-1;
+    grid-template-columns: 100vw;
+    border-radius: 0;
+    border-right: none;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-rows: max-content 60% 1fr;
+    grid-column: 1/-1;
   }
 }

@@ -27,4 +27,9 @@
     background-color: $color-purple-100;
     color: $color-purple-500;
   }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-column: 1/-1;
+    border-radius: 0;
+  }
 }

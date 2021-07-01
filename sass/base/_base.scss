@@ -25,7 +25,11 @@ body {
     background-color: $color-purple-200;
   }
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: $bp-largest) {
     grid-template-columns: 1fr 80% 1fr;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 100%;
   }
 }
