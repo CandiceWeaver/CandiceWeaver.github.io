@@ -20,6 +20,11 @@
         grid-row: 1/2;
         grid-column: 1/2;
       }
+
+      @media only screen and (max-width: $bp-smaller) {
+        grid-row: 1/2;
+        grid-column: 1/-1;
+      }
     }
 
     &--2 {
@@ -29,6 +34,11 @@
       @media only screen and (max-width: $bp-large) {
         grid-row: 1/2;
         grid-column: 2/3;
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+        grid-row: 2/3;
+        grid-column: 1/-1;
       }
     }
 
@@ -40,6 +50,11 @@
         grid-row: 2/3;
         grid-column: 1/2;
       }
+
+      @media only screen and (max-width: $bp-smaller) {
+        grid-row: 3/4;
+        grid-column: 1/-1;
+      }
     }
 
     &--4 {
@@ -49,6 +64,11 @@
       @media only screen and (max-width: $bp-large) {
         grid-row: 2/3;
         grid-column: 2/3;
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+        grid-row: 4/5;
+        grid-column: 1/-1;
       }
     }
 
@@ -60,6 +80,11 @@
         grid-row: 3/4;
         grid-column: 1/2;
       }
+
+      @media only screen and (max-width: $bp-smaller) {
+        grid-row: 5/6;
+        grid-column: 1/-1;
+      }
     }
 
     &--6 {
@@ -69,6 +94,11 @@
       @media only screen and (max-width: $bp-large) {
         grid-row: 3/4;
         grid-column: 2/3;
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+        grid-row: 6/7;
+        grid-column: 1/-1;
       }
     }
 
@@ -88,6 +118,14 @@
         @media only screen and (max-width: $bp-medium) {
           height: 45%;
         }
+
+        @media only screen and (max-width: $bp-smaller) {
+          height: 50%;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+          height: 40%;
+        }
       }
 
       &-2 {
@@ -95,6 +133,14 @@
 
         @media only screen and (max-width: $bp-medium) {
           height: 45%;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+          height: 50%;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+          height: 40%;
         }
       }
 
@@ -111,6 +157,14 @@
 
         @media only screen and (max-width: $bp-medium) {
           height: 45%;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+          height: 50%;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+          height: 40%;
         }
       }
     }
@@ -132,6 +186,14 @@
         @media only screen and (max-width: $bp-medium) {
           height: 55%;
         }
+
+        @media only screen and (max-width: $bp-smaller) {
+          height: 50%;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+          height: 60%;
+        }
       }
 
       &-2 {
@@ -139,6 +201,14 @@
 
         @media only screen and (max-width: $bp-medium) {
           height: 55%;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+          height: 50%;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+          height: 60%;
         }
       }
 
@@ -155,6 +225,14 @@
 
         @media only screen and (max-width: $bp-medium) {
           height: 55%;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+          height: 50%;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+          height: 60%;
         }
       }
 
@@ -182,6 +260,10 @@
       border: 1rem solid $color-purple-200;
       background-color: $color-purple-200;
     }
+
+    @media only screen and (max-width: $bp-smallest) {
+      border-radius: 0;
+    }
   }
 
   &__btn {
@@ -194,6 +276,10 @@
       grid-row: 4/5;
       grid-column: 1/-1;
     }
+
+    @media only screen and (max-width: $bp-smaller) {
+      grid-row: 7/8;
+    }
   }
 
   @media only screen and (max-width: $bp-large) {
@@ -205,5 +291,15 @@
     grid-gap: 2rem;
     grid-column: 1/-1;
     padding: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    grid-template-rows: repeat(6, 45rem) max-content;
+    grid-template-columns: 100%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    grid-template-rows: repeat(6, 52rem) max-content;
+    padding: 0;
   }
 }

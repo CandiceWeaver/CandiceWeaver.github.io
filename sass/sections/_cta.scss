@@ -8,6 +8,7 @@
   justify-content: center;
   border-radius: 1rem;
   box-shadow: $box-shadow-large;
+  text-align: center;
 
   &__heading {
     align-self: center;
@@ -15,7 +16,11 @@
 
   &__text {
     align-self: center;
-    margin: 1.5rem 0 3rem 0;
+    padding: 1.5rem 0 3rem 0;
+
+    @media only screen and (max-width: $bp-smaller) {
+      padding: 1.5rem 1rem 3rem 1rem;
+    }
   }
 
   &__btn {
@@ -31,5 +36,9 @@
   @media only screen and (max-width: $bp-small) {
     grid-column: 1/-1;
     border-radius: 0;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    padding: 0 1rem;
   }
 }

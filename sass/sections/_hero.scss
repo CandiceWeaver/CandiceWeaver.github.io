@@ -13,13 +13,17 @@
   border-right: 1px solid rgba($color-purple-400, 0.18);
   border-bottom: 1px solid rgba($color-purple-400, 0.18);
   display: grid;
-  grid-template-rows: max-content 50% 1fr;
+  grid-template-rows: 1fr repeat(2, 40%);
   grid-template-columns: 10rem 1fr 10rem;
 
   &__navigation {
     grid-row: 1/2;
     grid-column: 1/-1;
     padding: 3rem 3rem 0 3rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 3rem 1rem 0 1rem;
+    }
   }
 
   &__content {
@@ -31,7 +35,7 @@
       margin-bottom: 1rem;
     }
 
-    @media only screen and (max-width: $bp-larger) {
+    @media only screen and (max-width: $bp-large) {
       justify-self: center;
       grid-column: 1/-1;
       text-align: center;
@@ -40,6 +44,10 @@
     @media only screen and (max-width: $bp-small) {
       align-self: center;
     }
+
+    @media only screen and (max-width: $bp-smallest) {
+      align-self: flex-end;
+    }
   }
 
   &__buttons {
@@ -47,13 +55,15 @@
     grid-column: 2/3;
     align-self: center;
 
-    @media only screen and (max-width: $bp-larger) {
-      justify-self: center;
-      grid-column: 1/-1;
+    &--hidden {
+      @media only screen and (max-width: $bp-smallest) {
+        display: none;
+      }
     }
 
-    @media only screen and (max-width: $bp-small) {
-      align-self: flex-start;
+    @media only screen and (max-width: $bp-large) {
+      justify-self: center;
+      grid-column: 1/-1;
     }
   }
 
@@ -75,7 +85,12 @@
   }
 
   @media only screen and (max-width: $bp-small) {
-    grid-template-rows: max-content 60% 1fr;
+    grid-template-rows: 1fr 50% 30%;
     grid-column: 1/-1;
+    position: relative;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    grid-template-rows: 1fr repeat(2, 40%);
   }
 }

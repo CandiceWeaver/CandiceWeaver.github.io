@@ -32,4 +32,8 @@ body {
   @media only screen and (max-width: $bp-small) {
     grid-template-columns: 100%;
   }
+
+  @media only screen and (max-width: $bp-smaller) {
+    grid-template-rows: 80vh repeat(2, max-content) 50vh max-content;
+  }
 }

@@ -4,6 +4,14 @@
   justify-content: space-between;
   text-transform: uppercase;
 
+  &__brand {
+    align-self: center;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.25rem;
+    }
+  }
+
   &__links {
     display: flex;
     justify-content: space-between;
@@ -20,17 +28,23 @@
           color: $color-purple-400;
         }
       }
+
+      @media only screen and (max-width: $bp-small) {
+        padding: 1rem;
+      }
     }
 
     @media only screen and (max-width: $bp-small) {
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
+      width: 100vw;
+      padding: 1rem;
     }
   }
 
   &__mobile {
     align-self: center;
-    display: none;
+    font-size: 2rem;
 
     &--open {
     }
@@ -38,9 +52,24 @@
     &--close {
     }
 
+    @media only screen and (min-width: 801px) {
+      display: none;
+    }
+
     @media only screen and (max-width: $bp-small) {
       justify-self: flex-end;
     }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-wrap: wrap;
+    position: fixed;
+    margin-top: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin-top: 0;
+    padding: 0 1rem;
   }
 }
 
