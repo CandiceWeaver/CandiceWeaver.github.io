@@ -1,0 +1,37 @@
+.techstack {
+  grid-row: 3/4;
+  grid-column: 1/-1;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: $color-purple-500;
+  box-shadow: $box-shadow-large;
+
+  &__tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--logo {
+      align-self: center;
+      font-size: 3rem;
+    }
+
+    &--name {
+      align-self: center;
+      padding-top: 0.75rem;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      padding: 2rem 0;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: $color-purple-100;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    flex-direction: column;
+  }
+}

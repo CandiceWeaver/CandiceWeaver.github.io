@@ -1,8 +1,8 @@
 .projects {
-  grid-row: 2/3;
+  grid-row: 4/5;
   grid-column: 2/3;
   display: grid;
-  grid-template-rows: 60rem repeat(2, 55rem) max-content;
+  grid-template-rows: 60rem repeat(2, 55rem);
   grid-template-columns: 29% repeat(2, 1fr) 29%;
   grid-gap: 5rem;
 
@@ -263,22 +263,6 @@
 
     @media only screen and (max-width: $bp-smallest) {
       border-radius: 0;
-    }
-  }
-
-  &__btn {
-    grid-row: 4/5;
-    grid-column: 2/4;
-    justify-self: center;
-    width: max-content;
-
-    @media only screen and (max-width: $bp-large) {
-      grid-row: 4/5;
-      grid-column: 1/-1;
-    }
-
-    @media only screen and (max-width: $bp-smaller) {
-      grid-row: 7/8;
     }
   }
 

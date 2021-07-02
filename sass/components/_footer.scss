@@ -1,5 +1,5 @@
 .footer {
-  grid-row: 5/6;
+  grid-row: 6/7;
   grid-column: 1/-1;
   background-color: $color-purple-400;
   display: flex;
@@ -76,5 +76,9 @@
 
   @media (prefers-color-scheme: light) {
     background-color: $color-purple-200;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    height: max-content;
   }
 }
