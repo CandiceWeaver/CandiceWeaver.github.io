@@ -46,6 +46,10 @@ h2 {
   font-style: italic;
   font-size: 2.75rem;
 
+  @media (prefers-color-scheme: light) {
+    color: $color-purple-400;
+  }
+
   @media only screen and (max-width: $bp-large) {
     font-size: 2.5rem;
   }
